@@ -27,10 +27,8 @@
 
 ```Shell
 
-    $ 
+    $ Creamos la clase App.java y escribimos las líneas de código oportunas para su correcto funcionamiento.
 
-    $ 
-
-    $ 
+    $ Nos dirigimos a la terminal y nos establecemos en el directorio del proyecto de maven. Posteriormente, ejecutamos el comando: "mvn jar.jar"
 
 ```
