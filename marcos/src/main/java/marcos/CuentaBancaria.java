@@ -1,14 +1,12 @@
-/**
- * Declaramos el paquete en el que se va a alojar el proyecto
- */
 package marcos;
 
+
 /**
- * Establecemos la clase CuentaBancaria, con sus atributos: titular y saldo
+ * Establecemos la clase CuentaBancaria con sus atributos: titular y saldo
  */
 public class CuentaBancaria {
 
-    private String titular; // nombre del titular de la cuenta bancaria
+    private String titular; // titular de la cuenta bancaria
     private double saldo; // saldo de la cuenta bancaria
 
     /**
@@ -41,10 +39,10 @@ public class CuentaBancaria {
     }
 
     /**
-     * Metodo que establece la cantidad aceptada a depositar en la cuenta bancaria
+     * Metodo que establece la cantidad adecuada a DEPOSITAR en la cuenta bancaria
      * 
      * @param cantidad a depositar en la cuenta bancaria
-     * @throws IllegalArgumentException cuando la cantidad a despositar es menor a 0
+     * @throws IllegalArgumentException cuando la cantidad es menor que 0
      */
     public void depositar(double cantidad) {
         if (cantidad > 0) {
@@ -55,10 +53,10 @@ public class CuentaBancaria {
     }
 
     /**
-     * Metodo que establece la cantidad aceptada a retirar de la cuenta bancaria
+     * Metodo que establece la cantidad adecuada a RETIRAR en la cuenta bancaria
      * 
-     * @param cantidad
-     * @throws IllegalArgumentException cuando la cantidad a retirar es mayor al saldo de la cuenta bancaria
+     * @param cantidad a retirar en la cuenta bancaria
+     * @throws IllegalArgumentException cuando la cantidad a retirar es mayor que el saldo de la cuenta o menor que 0
      */
     public void retirar(double cantidad) {
         if (cantidad > 0 && cantidad <= saldo) {

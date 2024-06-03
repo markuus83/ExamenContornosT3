@@ -1,19 +1,11 @@
 package marcos;
 
-/**
- * 
- */
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+import marcos.CuentaBancaria;
 
-/**
- * 
- */
 public class CuentaBancariaTest {
 
-    /**
-     * 
-     */
     @Test
     public void testConstructorYGetters() {
         CuentaBancaria cuenta = new CuentaBancaria("Juan", 100.0);
@@ -21,9 +13,6 @@ public class CuentaBancariaTest {
         assertEquals(100.0, cuenta.getSaldo());
     }
 
-    /**
-     * 
-     */
     @Test
     public void testDepositar() {
         CuentaBancaria cuenta = new CuentaBancaria("Ana", 200.0);
@@ -31,9 +20,6 @@ public class CuentaBancariaTest {
         assertEquals(250.0, cuenta.getSaldo());
     }
 
-    /**
-     * 
-     */
     @Test
     public void testRetirar() {
         CuentaBancaria cuenta = new CuentaBancaria("Pedro", 150.0);
@@ -41,9 +27,6 @@ public class CuentaBancariaTest {
         assertEquals(100.0, cuenta.getSaldo());
     }
 
-    /**
-     * 
-     */
     @Test
     public void testRetirarCantidadInvalida() {
         CuentaBancaria cuenta = new CuentaBancaria("María", 100.0);
@@ -51,9 +34,6 @@ public class CuentaBancariaTest {
         assertThrows(IllegalArgumentException.class, () -> cuenta.retirar(150.0));
     }
 
-    /**
-     * 
-     */
     @Test
     public void testDepositarCantidadInvalida() {
         CuentaBancaria cuenta = new CuentaBancaria("Carlos", 100.0);

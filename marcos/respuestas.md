@@ -1,6 +1,6 @@
-1. Ejercicio 1: Documentación 
+1. Ejercicio 1: Documentación
 
-```Shell
+```Shell    
 
     $ Para la documentación de la clase "CuentaBancaria.Java", entramos en dicha clase, y al principio de cada fragmento de código que queremos documentar, en este caso son solamente los métodos y atributos, abrimos un bloque de documentación "/**/" y escribimos ahí el comentario a redactar.
 
@@ -12,7 +12,6 @@
 
 ```
 
-2. Ejercicio 2: Pruebas
 
 ```Shell
 
@@ -21,9 +20,8 @@
     $ Nuevamente, nos dirigimos a una terminal, y dentro del directorio maven, ejecutamos el comando: "mvn test".
 
     $ Observamos como la build es correcta y no da ningun error.
+    
 ```
-
-3. Ejercicio 3: Creación de App y empaquetar
 
 ```Shell
 
@@ -32,3 +30,4 @@
     $ Nos dirigimos a la terminal y nos establecemos en el directorio del proyecto de maven. Posteriormente, ejecutamos el comando: "mvn jar.jar"
 
 ```
+
